@@ -1,6 +1,5 @@
 package com.kafka.config;
 
-//import com.fasterxml.jackson.databind.JsonSerializer;
 import com.kafka.topic.model.entity.Operation;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
