@@ -1,5 +1,9 @@
 server:
   port: 9099
+
+topic-test:
+  api:
+    path: '/camel'
 spring:
   kafka:
     consumer:
@@ -14,3 +18,17 @@ spring:
       bootstrap-servers: localhost:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+
+camel:
+  springboot:
+    name: ServicesRest
+management:
+  port: 8081
+endpoints:
+  enabled: false
+  health:
+    enabled: true
+quickstart:
+  generateOrderPeriod: 10s
+  processOrderPeriod: 30s
